@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Countries of the world
+  div
+    input.query(type='text' placeholder='Search Query')
+    button.search-countries(type="button") Search Countries
+  div: button.load-countries(type="button") Load Countries
+
+
+block scripts
+  script(type='text/javascript', src="/scripts/main.js")
